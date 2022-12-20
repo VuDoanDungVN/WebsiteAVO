@@ -1,29 +1,7 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: SPONDON IT
-Author E-mail: info@spondonit.com
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: Medicare Medical
-@Author: Naim LAsker
-@Developed By: Naim LAsker
-
-
-=====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
 /*=================== fonts ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500&family=Roboto+Condensed:wght@700&display=swap');
 
 /*---------------------------------------------------- */
-/*----------------------------------------------------*/
-/*---------------------------------------------------- */
-/*----------------------------------------------------*/
 body {
   line-height: 25px;
   font-size  : 16px;
@@ -113,10 +91,9 @@ button:focus {
   background: #002347;
 }
 
-/*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 130px 0;
+  padding: 50px 0;
 }
 
 @media (max-width: 991px) {
@@ -453,7 +430,7 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index        : 1;
-  min-height     : 900px;
+  min-height     : 100vh;
   position       : relative;
   background     : url(../img/banner/home-banner.jpg) no-repeat center;
   background-size: cover;
@@ -684,7 +661,7 @@ button:focus {
 }
 
 .single_feature {
-  position          : relative;
+  justify-content   : center;
   background        : #f9f9ff;
   padding           : 40px 36px;
   margin-bottom     : 30px;
@@ -1162,10 +1139,19 @@ button:focus {
   }
 }
 
+.form_group label {
+  float: left;
+}
+
 .register_form {
   background: #fff;
   text-align: center;
   padding   : 40px;
+  min-width : 500px;
+}
+
+.register_form p {
+  font-size: 13px;
 }
 
 @media (max-width: 991px) {
@@ -1252,13 +1238,16 @@ button:focus {
 
 .single-trainer .meta-text {
   background        : #f9f9ff;
-  padding           : 20px 25px;
+  padding           : 20px 5px;
   box-shadow        : 0px 0px 30px rgba(153, 153, 153, 0.13);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition   : all 0.3s ease 0s;
   -o-transition     : all 0.3s ease 0s;
   transition        : all 0.3s ease 0s;
   background        : #ffffff;
+  min-height        : 345px;
+  min-width         : 245px;
+  overflow          : hidden;
 }
 
 @media (max-width: 991px) {
@@ -1270,6 +1259,9 @@ button:focus {
 .single-trainer .meta-text h4 {
   font-size    : 20px;
   margin-bottom: 0px;
+  height       : 25px;
+  min-width    : 245px;
+  overflow     : hidden;
 }
 
 .single-trainer .meta-text .designation {
@@ -1292,7 +1284,24 @@ button:focus {
 }
 
 .single-trainer:hover .meta-text {
-  box-shadow: 0px 10px 30px rgba(0, 35, 71, 0.15);
+  box-shadow: 0px 10px 30px #07213b26;
+}
+
+.thanhvien i {
+  font-size: 13px;
+  color    : #043b72;
+  margin   : 10px 5px;
+  padding  : 5px;
+}
+
+.thanhvien i:hover {
+  color: #fdc632;
+}
+
+.mb-4 p {
+  min-height: 175px;
+  height    : 175px;
+  overflow  : hidden;
 }
 
 /* End Trainers Area css
@@ -1419,15 +1428,16 @@ button:focus {
 }
 
 .testi_item {
-  padding           : 50px 55px;
+  padding           : 10px 30px;
   margin-bottom     : 200px;
   margin-left       : 10px;
-  margin            : 0px 10px 80px;
+  margin            : 0px 10px 50px;
   box-shadow        : 0px 15px 30px 0px rgba(221, 221, 221, 0.3);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition   : all 0.3s ease 0s;
   -o-transition     : all 0.3s ease 0s;
   transition        : all 0.3s ease 0s;
+  min-height        : 200px;
 }
 
 @media (max-width: 991px) {
@@ -1465,6 +1475,10 @@ button:focus {
 
 .testi_item .testi_text p {
   margin-bottom: 0px;
+  font-size    : 14px;
+  max-height   : 30px;
+  min-height   : 30px;
+  overflow     : hidden;
 }
 
 .testi_item:hover {
@@ -4108,12 +4122,13 @@ h6 {
   }
 
   .navbar .container {
-    padding-left : 15px;
-    padding-right: 15px;
+    padding-left    : 15px;
+    padding-right   : 15px;
+    background-color: #494949;
   }
 
   .img-logo {
-    width: 10px;
+    width: 50px;
   }
 
   .nav {
